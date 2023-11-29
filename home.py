@@ -5,6 +5,12 @@ import tensorflow as tf
 from PIL import Image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobilenet_v2_preprocess_input
 
+st.set_page_config(
+        page_title="AAYU",
+        page_icon="logo.jpg",
+        layout="centered"
+
+)
 
 def app():
 
