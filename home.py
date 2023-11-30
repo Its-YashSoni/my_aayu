@@ -55,7 +55,7 @@ def app():
         img_pred = np.asarray(img_pred)
 
         img_pred=img_pred/255.
-    
+        img_pred=img_pred.reshape(1,224,224,3)
         predictions = model.predict(img_pred)
         prediction = predictions.argmax()
         prob = predictions[0][prediction]
