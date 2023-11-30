@@ -50,7 +50,7 @@ def app():
         img = img.resize((224, 224))
 
         
-        img_pred = Image.open("test6.jpg")
+        img_pred = Image.open(uploaded_file)
         img_pred = img_pred.resize((224,224))
         img_pred = np.asarray(img_pred)
 
